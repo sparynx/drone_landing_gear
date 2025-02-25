@@ -29,7 +29,7 @@ void loop() {
     Serial.print("Distance: ");
     Serial.println(distance);
 
-    if (distance < 20) {
+    if (distance < 50) {
         for (int i = 0; i < 4; i++) {
             landingServos[i].write(90);  // Deploy landing gear
         }
